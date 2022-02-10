@@ -25,6 +25,15 @@ public void draw()
 {
   background(0);
   noStroke();
+  fill(255);
+  textSize(15);
+  text("Location X "+ (int) bob.getX(),0,15*1);
+  text("Location Y "+ (int) bob.getX(),0,15*2);
+  text("Remaining Asteroids " + rocks.size(),0,15*3);
+  text("X Speed " + (int) bob.getXspeed(),0,15*4);
+  text("Y Speed " + (int) bob.getYspeed(),0,15*5);
+  text("Point Direction " + (int) bob.getPointDirection(),0,15*6);
+  
   for (int i=rocks.size()-1; i>=0; i--)
   {
     Asteroid aRock = rocks.get(i);
